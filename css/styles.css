@@ -11,9 +11,10 @@ body, html {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
 }
 
@@ -33,7 +34,6 @@ header {
     float: inline-start;
     padding: 0;
     margin: 0;
-    
 }
 
 nav ul {
@@ -117,19 +117,58 @@ nav ul li a {
 
 /* Skills section styles */
 .skills {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
     padding: 4rem 0;
     background: #fff;
 }
 
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .skills h2 {
+    letter-spacing: -.03em;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: left;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.skills-subheading {
+    margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    /*text-align: left;*/
+    color: #666;
+    padding-right: 24px;
+    font-size: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.skills-wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: 24px;
+    padding-right: 5%;
 }
 
 .skill-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    position: relative;
     gap: 2rem;
 }
 
@@ -140,7 +179,7 @@ nav ul li a {
 }
 
 .skill-card h3 {
-    color: #333;
+    color: #3498DB;
     margin-bottom: 0.5rem;
 }
 
@@ -155,7 +194,17 @@ nav ul li a {
     background: #fff;
 }
 
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .projects-header {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: 24px;
+    padding-right: 5%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -174,6 +223,13 @@ nav ul li a {
 .projects-header p {
     color: #666;
     margin-bottom: 1.5rem;
+}
+
+.projects-wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: 24px;
+    padding-right: 5%;
 }
 
 .projects-image {
